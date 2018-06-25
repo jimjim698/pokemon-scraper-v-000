@@ -24,7 +24,7 @@ def self.find(id, db)
   name= pokemon[1]
   type= pokemon[2]
   pikachu = Pokemon.new(id:id,name:name,type:type,db:db)
-  binding.pry
+  
 end
 
 end
