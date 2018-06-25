@@ -23,8 +23,13 @@ def self.find(id, db)
   id = pokemon[0]
   name= pokemon[1]
   type= pokemon[2]
-  pikachu = Pokemon.new(id:id,name:name,type:type,db:db)
-  
+  new_pokemon = Pokemon.new(id:id,name:name,type:type,db:db)
+
+end
+
+def alter_hp
+  pokemon = db.execute("UPDATE pokemon SET hp = ? ")
+
 end
 
 end
